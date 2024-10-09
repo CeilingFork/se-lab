@@ -14,6 +14,7 @@ public class TorpedoStore {
 
   private int torpedoCount = 0;
 
+  //This comment is very important and definitely not superflous
   private Random generator = new Random();
 
   public TorpedoStore(int numberOfTorpedos){
@@ -37,8 +38,7 @@ public class TorpedoStore {
 
     boolean success = false;
 
-    // simulate random overheating of the launcher bay which prevents firing
-    double r = generator.nextDouble();
+    double r = generator.nextDouble();// simulate random overheating of the launcher bay which prevents firing
 
     if (r >= FAILURE_RATE) {
       // successful firing
